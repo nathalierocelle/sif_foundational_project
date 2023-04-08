@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 
 def preprocess_data(img):
-    image = cv2.resize(cv.imread(img), (224, 224), interpolation=cv2.INTER_AREA)
+    image = cv.resize(cv.imread(img), (224, 224), interpolation=cv2.INTER_AREA)
     image = np.asarray(image, dtype=np.float32).reshape(1, 224, 224, 3)
     image = (image / 127.5) - 1
     return image
