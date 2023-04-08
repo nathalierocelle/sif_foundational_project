@@ -2,10 +2,9 @@ import streamlit as st
 import cv2
 import pandas as pd
 import numpy as np
-import joblib
 from PIL import Image
 from tensorflow import keras
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from utils import preprocess_data,prediction
 
 
