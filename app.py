@@ -8,7 +8,7 @@ from tensorflow import keras
 from utils import preprocess_data,prediction
 
 
-model = tf.keras.models.load_model("keras_Model.h5", compile=False)
+model = tf.keras.models.load_model("keras_model.h5")
 labels = ['Bleached', 'Healthy']
 
 df = pd.DataFrame(['Bleached','Healthy'],columns=['Coral Health Status'])
