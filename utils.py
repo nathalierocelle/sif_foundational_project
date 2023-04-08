@@ -7,12 +7,12 @@ def preprocess_data(img):
     image = (image / 127.5) - 1
     return image
 
-def prediction(model,image,class_names):
-    prediction = model.predict(image)
-    index = np.argmax(prediction)
-    class_name = class_names[index]
-    confidence_score = prediction[0][index]
-    return class_name, confidence_score   
+def prediction(model,image,labels):
+    pred_class = model.predict(image)[0]
+    pred_class_np = np.argmax(pred_class, axis=-1) 
+    label = labels[pred_class_np]
+    score = max(pred_class)*100
+    return label, score   
 
 
     
