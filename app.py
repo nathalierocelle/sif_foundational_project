@@ -9,9 +9,9 @@ from utils import preprocess_data,prediction
 
 
 model = tf.keras.models.load_model("keras_model.h5")
-labels = ['Bleached', 'Healthy']
+labels = ['Healthy', 'Bleached']
 
-df = pd.DataFrame(['Bleached','Healthy'],columns=['Coral Health Status'])
+df = pd.DataFrame(['Healthy','Bleached'],columns=['Coral Health Status'])
 
 st.set_page_config(page_icon="🌊")
 #st.image('Banner.jpg')
