@@ -3,12 +3,12 @@ import cv2
 import pandas as pd
 import numpy as np
 from PIL import Image
+import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras.models import load_model
 from utils import preprocess_data,prediction
 
 
-model = load_model("keras_Model.h5", compile=False)
+model = tf.keras.models.load_model("keras_Model.h5", compile=False)
 labels = ['Bleached', 'Healthy']
 
 df = pd.DataFrame(['Bleached','Healthy'],columns=['Coral Health Status'])
