@@ -14,7 +14,7 @@ labels = ['Bleached', 'Healthy']
 df = pd.DataFrame(['Bleached','Healthy'],columns=['Coral Health Status'])
 
 st.set_page_config(page_icon="🌊")
-st.image('Banner.jpg')
+#st.image('Banner.jpg')
 
 def main():
     st.sidebar.markdown("<h2>About the app</h2>", unsafe_allow_html=True)
