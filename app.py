@@ -13,7 +13,7 @@ labels = ['Healthy', 'Bleached']
 
 df = pd.DataFrame(['Healthy','Bleached'],columns=['Coral Health Status'])
 
-st.set_page_config(page_icon="🌊")
+st.set_page_config(page_icon="🌊", layout="wide")
 st.image('Banner.jpg')
 
 def main():
