@@ -14,7 +14,7 @@ labels = ['Healthy', 'Bleached']
 df = pd.DataFrame(['Healthy','Bleached'],columns=['Coral Health Status'])
 
 st.set_page_config(page_icon="🌊")
-#st.image('Banner.jpg')
+st.image('Banner.jpg')
 
 def main():
     st.sidebar.markdown("<h2>About the app</h2>", unsafe_allow_html=True)
@@ -47,6 +47,9 @@ def main():
     
         st.write("The current health staus of the reef is: ",image_class)
         st.write("The similarity score is approximately",round(score,2))
+
+        if image_class == 'Bleached':
+            st.write(":red[URGENT ALERT: The coral reef is undergoing bleaching. Please contact your local marine institute immediately for assistance.]")
         #print("The image is classified as ",image_class, "with a similarity score of",score)
            
 
