@@ -1,4 +1,5 @@
-# SIF Foundational Project
+# SIF Foundational Project 
+### Coral Bleaching Classification
 
 ![Snapshot of the webapp](coral_bleaching_classification_app.gif) 
 
